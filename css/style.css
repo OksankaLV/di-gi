@@ -186,7 +186,7 @@ button.owl-dot.active span {
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;
     color: var(--color-background);
 }
 
@@ -800,6 +800,11 @@ div#end a{
         text-align: center;
     }*/
 }
+@media only screen and (max-width: 554px) {
+    .news-content {
+        column-count: 1;
+        }
+}
 @media only screen and (max-width: 320px) {
     header {
         padding-left: 25px;
@@ -811,6 +816,9 @@ div#end a{
         margin-top: 36px;
     }
     .intro button{
+        display: none;
+    }
+    .owl-nav {
         display: none;
     }
     .points{
@@ -846,9 +854,6 @@ div#end a{
     .latest-news h2{
         font-size: 24px;
         line-height: 38px;
-    }
-    .news-content{
-        column-count: 1;
     }
     .blockquote {
         width: 100%;
